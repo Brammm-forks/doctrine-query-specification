@@ -71,7 +71,7 @@ use FrankDeJonge\DoctrineQuerySpecification\QueryConstraint;
 
 class IsPublished implements QueryConstraint
 {
-    public function asQueryConstraint(QueryBuilder $builder, $rootAlias): Composite
+    public function asQueryConstraint(QueryBuilder $builder, $rootAlias)
     {
         $expr = $builder->expr();
         
