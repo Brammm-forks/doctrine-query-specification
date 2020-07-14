@@ -29,7 +29,7 @@ abstract class SpecificationCollection implements QueryConstraint, QueryModifier
     /**
      * @inheritdoc
      */
-    public function asQueryConstraint(QueryBuilder $queryBuilder, string $rootAlias): ?object
+    public function asQueryConstraint(QueryBuilder $queryBuilder, string $rootAlias)
     {
         $constraintsFilter = function ($specification) {
             return $specification instanceof QueryConstraint;
